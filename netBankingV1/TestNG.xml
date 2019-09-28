@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "netBankingV1">
+
+	<test name = "Net Banking Web Test"  thread-count="2" parallel="methods">
+		<classes>
+			<class name = "com.netBankingV1.testCases.TC_01" />
+		</classes>
+	</test>
+</suite>

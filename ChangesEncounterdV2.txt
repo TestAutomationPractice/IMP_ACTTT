@@ -1,0 +1,13 @@
+Changes Encountered :
+
+1) Link updated in config file.
+2) Menu bar now gets open after clicking # button.
+3) Locators got updated.
+4) Covered the functionality which not done in first half.
+
+
+Issue encountered :
+1) Time was ver less for the first half , so we covered that in second half.
+2) Add movie button not working.
+3) The application is not stable and sometime not getting loaded.
+
