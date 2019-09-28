@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2346bbb2-3695-4d61-b053-2c7620b75e2f" created="2.6.0" activeEnvironment="Default environment" name="REST Project 1" resourceRoot="" defaultScriptLanguage="Groovy" updated="2.6.0 2019-01-14T14:47:06Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="cffd0cf8-fe66-48e5-9da9-1b5daa8c9cf4" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://autothon-nagarro-backend-y01.azurewebsites.net" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.rest.actions.service.Wadl2JavaAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Automatic Package Names" value="false"/>
+  <con:entry key="Output Directory" value=""/>
+  <con:entry key="JAXB Customization File(s)" value=""/>
+  <con:entry key="Java Args" value=""/>
+  <con:entry key="Package" value=""/>
+  <con:entry key="Tool Args" value=""/>
+</xml-fragment>]]></con:setting>
+    </con:settings>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://autothon-nagarro-backend-y01.azurewebsites.net</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/login" id="4ee934d0-fa27-4346-aafb-b9ac0bf0ec0f">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="" id="6dafb565-dea7-4340-823f-6ee4414f0c4d" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:log="http://autothon-nagarro-backend-y01.azurewebsites.net/login">log:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="e0fce191-bcba-41a3-b0bc-b03e33529bef" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://autothon-nagarro-backend-c01.azurewebsites.net</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="2" path="/movies" id="a9d801a3-7963-474f-8f5f-def969b155ef">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="aef4c753-2322-48f7-8a0f-e55920468fd8" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html</con:mediaType>
+          <con:status>403</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/plain; charset=utf-8</con:mediaType>
+          <con:status>403</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:mov="http://autothon-nagarro-backend-y01.azurewebsites.net/movies">mov:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="bc9dc6cf-0482-4691-b0e2-53fe410761e0" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://autothon-nagarro-backend-c01.azurewebsites.net</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="3" path="/review" id="ef3171d4-778b-4503-bb86-add72814e043">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="b467639b-a96e-40cf-884f-577025dd4548" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="36076c3e-cceb-418d-8f38-635348f998f9" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://autothon-nagarro-backend-c01.azurewebsites.net</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="4" path="/movies" id="64528543-0ce2-42ce-a222-a61d49ad0b48">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>id</con:name>
+          <con:value/>
+          <con:style>TEMPLATE</con:style>
+          <con:default/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Method 1" id="f6d21463-bac5-473b-928a-827adf17ac83" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html</con:mediaType>
+          <con:status>403</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=utf-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/plain; charset=utf-8</con:mediaType>
+          <con:status>403</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="bbf4ac47-71ab-423e-aef2-d40887aa2405" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://autothon-nagarro-backend-c01.azurewebsites.net</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="id" value="" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="2ec5c951-6e77-4ad0-b97b-251c628c702c" name="TestSuite 1">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="72f371f7-28bc-44d3-a1ca-09ffbd91ac33" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="login" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="get data" id="17303786-f283-4af0-8f90-5fca254b1887">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration>
+              <file>D:/Autothon/Autothon_2/Autothon_API/Data/driversheet.xlsx</file>
+              <worksheet>data User</worksheet>
+              <cell>A2</cell>
+              <ignoreEmpty>true</ignoreEmpty>
+              <evaluateFormulas>true</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>UserID</con:property>
+          <con:property>password</con:property>
+          <con:startRow/>
+          <con:endRow/>
+          <con:recordsPerIteration>1</con:recordsPerIteration>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:failOnEmpty>true</con:failOnEmpty>
+          <con:trimValues>false</con:trimValues>
+          <con:entitizeValues>false</con:entitizeValues>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:expandProperties>false</con:expandProperties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request" id="3af14a65-d445-41ea-80b8-71524fc5eaae">
+        <con:settings/>
+        <con:config service="http://autothon-nagarro-backend-y01.azurewebsites.net" resourcePath="/login" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="e0fce191-bcba-41a3-b0bc-b03e33529bef" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://autothon-nagarro-backend-c01.azurewebsites.net</con:endpoint>
+            <con:request>{
+	"username": "${get data#UserID}",
+	"password": "${get data#password}"
+}</con:request>
+            <con:originalUri>http://autothon-nagarro-backend-y01.azurewebsites.net/login</con:originalUri>
+            <con:assertion type="GroovyScriptAssertion" id="8316d6a0-9af8-4953-8d8e-ea0212d96e60" name="Script Assertion">
+              <con:configuration>
+                <scriptText>import groovy.json.JsonSlurper
+responseContent = context.testCase.getTestStepByName("REST Request").getPropertyValue("response")
+slurperresponse = new JsonSlurper().parseText(responseContent)
+id=slurperresponse.id.toString()
+usrname=slurperresponse.username.toString()
+log.info(id)
+if(usrname == "admin")
+{
+context.testCase.testSuite.project.setPropertyValue("adminID", id)
+}
+else
+{
+context.testCase.testSuite.project.setPropertyValue("userID", id)
+}</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Existence Match" id="c4922e16-437a-4d20-be62-6267d53c0dbf" name="Check for existence of [id]">
+              <con:configuration>
+                <path>$['id']</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="093d756a-a1dc-48ee-8ba2-dc673a78d5db">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>get data</dataSourceStep>
+          <targetStep>REST Request</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>17303786-f283-4af0-8f90-5fca254b1887</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:testCase id="702d845c-9460-4603-afcd-452e762b9375" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Addmovies" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="get data" id="8a0baf7d-de25-487f-9c6e-2c9c5041b302">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Directory">
+            <con:configuration>
+              <file>D:/Autothon/Autothon_2/Autothon_API/Data/driversheet.xlsx</file>
+              <worksheet>add movie</worksheet>
+              <cell>A2</cell>
+              <ignoreEmpty>false</ignoreEmpty>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>categories</con:property>
+          <con:property>description</con:property>
+          <con:property>director</con:property>
+          <con:property>image</con:property>
+          <con:property>rating</con:property>
+          <con:property>rented</con:property>
+          <con:property>review</con:property>
+          <con:property>titl</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Addmovies" id="c218b1d1-eb19-49d3-b36c-ac6db0280a44">
+        <con:settings/>
+        <con:config service="http://autothon-nagarro-backend-y01.azurewebsites.net" resourcePath="/movies" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Addmovies" id="bc9dc6cf-0482-4691-b0e2-53fe410761e0" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="user" value="${#Project#adminID}" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>http://autothon-nagarro-backend-c01.azurewebsites.net</con:endpoint>
+            <con:request>{
+	 "movie": {
+        "title": "${get data#titl}",
+        "director": "${get data#director}",
+        "description": "${get data#description}",
+        "categories": "${get data#categories}",
+        "image": "${get data#image}",
+        "rating": "${get data#rating}"
+	 }
+}</con:request>
+            <con:originalUri>http://autothon-nagarro-backend-y01.azurewebsites.net/movies</con:originalUri>
+            <con:assertion type="GroovyScriptAssertion" id="7927fefa-6ff7-4168-bbf2-f79138170df0" name="Script Assertion">
+              <con:configuration>
+                <scriptText>import groovy.json.JsonSlurper
+responseContent = context.testCase.getTestStepByName("Addmovies").getPropertyValue("response")
+slurperresponse = new JsonSlurper().parseText(responseContent)
+id=slurperresponse.id.toString()
+log.info(id)
+context.testCase.testSuite.project.setPropertyValue("movieid", id)</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Existence Match" id="b4b4e35e-e7b8-4690-b703-fc7b86f93f76" name="Check for existence of [rating]">
+              <con:configuration>
+                <path>$['rating']</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="cae27790-4518-4f5d-a7b1-9ca56af0f20b">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>get data</dataSourceStep>
+          <targetStep>Addmovies</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>8a0baf7d-de25-487f-9c6e-2c9c5041b302</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:testCase id="cdc4e753-3878-433f-bb0e-f519ddf9715f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetMovie" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="get data" id="e1e523ed-b1d3-40c3-b7ac-fbd1eca4cd05">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Directory">
+            <con:configuration>
+              <directory/>
+              <filter/>
+              <encoding/>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>categories</con:property>
+          <con:property>description</con:property>
+          <con:property>director</con:property>
+          <con:property>image</con:property>
+          <con:property>rating</con:property>
+          <con:property>rented</con:property>
+          <con:property>review</con:property>
+          <con:property>titl</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request" id="0ed30eca-c423-4ec0-92bb-d723ac992919">
+        <con:settings/>
+        <con:config service="http://autothon-nagarro-backend-y01.azurewebsites.net" resourcePath="" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="bbf4ac47-71ab-423e-aef2-d40887aa2405" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer ${#Project#userID}" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>http://autothon-nagarro-backend-c01.azurewebsites.net</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://autothon-nagarro-backend-y01.azurewebsites.net/</con:originalUri>
+            <con:assertion type="GroovyScriptAssertion" id="b07b5fd3-74d1-450e-8d6f-0a6e45482801" name="Script Assertion">
+              <con:configuration>
+                <scriptText>import groovy.json.JsonSlurper
+responseContent = context.testCase.getTestStepByName("REST Request").getPropertyValue("response")
+slurperresponse = new JsonSlurper().parseText(responseContent)
+id=slurperresponse.id.toString()
+log.info(id)
+def movieid = context.expand( '${#Project#movieid}' )
+assert id.contains(movieid)</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="id" value="${#Project#movieid}" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>e1e523ed-b1d3-40c3-b7ac-fbd1eca4cd05</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>userID</con:name>
+      <con:value>1263883256648335</con:value>
+    </con:property>
+    <con:property>
+      <con:name>adminID</con:name>
+      <con:value>29496729781047204</con:value>
+    </con:property>
+    <con:property>
+      <con:name>movieid</con:name>
+      <con:value>40</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository>
+    <con:basicAuthEntry>
+      <con:name>admin</con:name>
+      <con:type>Basic</con:type>
+    </con:basicAuthEntry>
+    <con:oAuth20AzureAuthEntry>
+      <con:name>Administrator</con:name>
+      <con:type>OAuth 2.0 (Azure)</con:type>
+      <con:accessToken>23162181868724518</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:accessTokenStatus>ENTERED_MANUALLY</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
+      <con:manualAccessTokenExpirationTimeUnit>SECONDS</con:manualAccessTokenExpirationTimeUnit>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:idToken>23162181868724518</con:idToken>
+      <con:idTokenStatus>ENTERED_MANUALLY</con:idTokenStatus>
+      <con:idTokenStartingStatus>ENTERED_MANUALLY</con:idTokenStartingStatus>
+      <con:jwtConfiguration/>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth20AzureAuthEntry>
+  </con:authRepository>
+  <con:tags/>
+</con:soapui-project>
